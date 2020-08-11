@@ -24,9 +24,19 @@
 
         document.querySelector('.category').addEventListener('click', (e) => {
             var x = document.querySelector("#display-drop");
-            if (x.style.display == "block") {    
+            if (x.style.display == "block") {
                 x.style.display = "none";
             } else {
                 x.style.display = "block";
             }
         })
+
+        document.querySelector('.mail-copy').addEventListener('click', (e) => {
+            var x = document.querySelector(".copy");
+            if (x.style.display == "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        })
+   
