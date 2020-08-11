@@ -78,6 +78,9 @@ body {
             }
         }
     }
+    .search-panel-mb{
+        display: none;
+    }
     .search-panel {
         background: #e7e6e6;
         height: 65px;
@@ -99,6 +102,7 @@ body {
                 font-weight: normal;
             }
         }
+        
         .search-form {
             width: 885px;
             display: flex;
@@ -715,4 +719,7 @@ body {
             color: #fff;
         }
     }
+}
+.swiper-container{
+    height: 100%;
 }

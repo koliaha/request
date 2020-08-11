@@ -97,6 +97,10 @@ body {
   color: #e9f5ec;
 }
 
+.header .search-panel-mb {
+  display: none;
+}
+
 .header .search-panel {
   background: #e7e6e6;
   height: 65px;
@@ -966,5 +970,9 @@ body {
   font-size: 18px;
   font-weight: 200;
   color: #fff;
+}
+
+.swiper-container {
+  height: 100%;
 }
 /*# sourceMappingURL=style.css.map */

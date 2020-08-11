@@ -10,6 +10,8 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800&subset=cyrillic">
+    <link rel="stylesheet" href="./styles/swiper-bundle.min.css">
+    <script src="./js/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -75,6 +77,33 @@
                         <div class="basket-num"><span>150 000 руб.</span></div>
                     </div>
                 </a>
+            </div>
+        </div>
+        <div class="search-panel-mb">
+            <div class="wrapper">
+                <nav role="navigation">
+                    <div id="menuToggle">
+                        <input type="checkbox" />
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <ul id="menu">
+                            <li><a href="">Компания</a></li>
+                            <li><a href="">Портфолио</a></li>
+                            <li><a href="">Проектирование</a></li>
+                            <li><a href="">Презентация</a></li>
+                            <li><a href="">Застройщикам</a></li>
+                            <li><a href="">Гос.заказчикам</a></li>
+                            <li><a href="">Таблет-питание</a></li>
+                            <li><a href="">Сервис</a></li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <a href=""><div class="logo"><img src="./img/logo1.png" alt="logo"></div></a>
+                <a href=""><div class="search-icon"><img src="./img/loopgreen.svg" alt="search"></div></a>
+                <a href=""><div class="phone"><img src="./img/phone-green.png" alt="phone"></div></a>
+                <a href=""><div class="basket"><img src="./img/shop-orange.png" alt="basket"></div></a>
             </div>
         </div>
         <div class="menu-bottom">
@@ -192,16 +221,50 @@
                 </div>
 
                 <div class="main-central">
-                    <div class="main-central-wrap">
-                        <div class="main-content">
-                            <div class="subtitle">Портфолио</div>
-                            <div class="title">НИИ скорой помощи им. Н.В. Склифосовского</div>
-                            <div class="text">Оборудование для пищеблоков</div>
-                            <a href="" class=" button btn">Подробнее</a>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="main-central-wrap">
+                                    <div class="main-content">
+                                        <div class="subtitle">Портфолио</div>
+                                        <div class="title">НИИ скорой помощи им. Н.В. Склифосовского</div>
+                                        <div class="text">Оборудование для пищеблоков</div>
+                                        <a href="" class=" button btn">Подробнее</a>
+                                    </div>
+                                    <div class="main-picture">
+                                        <img src="./img/product-mainscreen.png" alt="mainscreen">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="main-central-wrap">
+                                    <div class="main-content">
+                                        <div class="subtitle">Портфолио</div>
+                                        <div class="title">НИИ скорой помощи им. Н.В. Склифосовского</div>
+                                        <div class="text">Оборудование для пищеблоков</div>
+                                        <a href="" class=" button btn">Подробнее</a>
+                                    </div>
+                                    <div class="main-picture">
+                                        <img src="./img/product-mainscreen.png" alt="mainscreen">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="main-central-wrap">
+                                    <div class="main-content">
+                                        <div class="subtitle">Портфолио</div>
+                                        <div class="title">НИИ скорой помощи им. Н.В. Склифосовского</div>
+                                        <div class="text">Оборудование для пищеблоков</div>
+                                        <a href="" class=" button btn">Подробнее</a>
+                                    </div>
+                                    <div class="main-picture">
+                                        <img src="./img/product-mainscreen.png" alt="mainscreen">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="main-picture">
-                            <img src="./img/product-mainscreen.png" alt="mainscreen">
-                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-scrollbar"></div>
                     </div>
                 </div>
 
@@ -379,10 +442,12 @@
                             ресторана, большой выбор современных моделей; доставку в любой регион РФ;</p>
                         <p>монтажные и пуско-наладочные работы; автоматизацию производственного процесса, что позволяет
                             определённое оборудование для бара;</p>
-                        
+
                     </div>
-                    <a href=""><div class="plus">+</div></a>
-                    
+                    <a href="">
+                        <div class="plus">+</div>
+                    </a>
+
 
                 </div>
                 <div class="complex-right">
@@ -483,6 +548,21 @@
             </div>
         </div>
     </footer>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        })
+    </script>
 </body>
 
 </html>
