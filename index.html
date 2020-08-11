@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header " >
         <div class="menu-top">
             <div class="wrapper">
                 <nav class="navigate">
@@ -106,7 +106,7 @@
                 <a href=""><div class="basket"><img src="./img/shop-orange.png" alt="basket"></div></a>
             </div>
         </div>
-        <div class="menu-bottom">
+        <div class="menu-bottom " id="navbar">
             <div class="wrapper">
                 <div class="product-list">
                     <div class="product-item">
@@ -470,7 +470,7 @@
         <div class="wrapper2">
             <div class="info-list">
                 <div class="info-item">
-                    <div class="info-item__header">Информация</div>
+                    <a href=""><div class="info-item__header">Информация</div></a>
                     <ul>
                         <li><a href="">Компания</a></li>
                         <li><a href="">Портфолио</a></li>
@@ -485,7 +485,7 @@
                     </ul>
                 </div>
                 <div class="info-item">
-                    <div class="info-item__header">Оборудование</div>
+                    <a href=""><div class="info-item__header">Оборудование</div></a>
                     <ul>
                         <li><a href="">Тепловое</a></li>
                         <li><a href="">Холодильное</a></li>
@@ -501,7 +501,7 @@
                     </ul>
                 </div>
                 <div class="info-item">
-                    <div class="info-item__header">Предложения</div>
+                    <a href=""><div class="info-item__header">Предложения</div></a>
                     <ul>
                         <li> <a href="">Кафе, барам, ресторанам</a></li>
                         <li><a href="">Дестким садам и школам</a></li>
@@ -514,7 +514,7 @@
                     </ul>
                 </div>
                 <div class="info-item">
-                    <div class="info-item__header">Контакты</div>
+                    <a href=""><div class="info-item__header">Контакты</div></a>
                     <ul>
                         <li>8 495 150-31-71</li>
                         <li>8 800 500 43 44</li>
@@ -563,6 +563,18 @@
             },
         })
     </script>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "113px";
+          } else {
+            document.getElementById("navbar").style.top = "-150px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+        </script>
 </body>
 
 </html>

@@ -36,9 +36,17 @@ body {
   margin: 0 auto;
 }
 
+.header {
+  position: fixed;
+  z-index: 10000;
+  width: 100%;
+  top: 0;
+}
+
 .header .menu-top {
   background: #34a853;
   position: relative;
+  z-index: 200;
 }
 
 .header .menu-top .navigate {
@@ -104,6 +112,8 @@ body {
 .header .search-panel {
   background: #e7e6e6;
   height: 65px;
+  position: relative;
+  z-index: 200;
 }
 
 .header .search-panel .wrapper {
@@ -282,6 +292,14 @@ body {
 }
 
 .header .menu-bottom {
+  width: 100%;
+  top: 113px;
+  position: fixed;
+  display: block;
+  -webkit-transition: top 0.3s;
+  transition: top 0.3s;
+  z-index: 100;
+  background: #fff;
   -webkit-box-shadow: 7px 7px 18px rgba(33, 37, 41, 0.12);
           box-shadow: 7px 7px 18px rgba(33, 37, 41, 0.12);
 }
@@ -318,7 +336,7 @@ body {
 
 /*main-section*/
 .main-section {
-  margin-top: 30px;
+  margin-top: 250px;
   margin-bottom: 30px;
 }
 
@@ -365,7 +383,7 @@ body {
 }
 
 .main-central {
-  width: 63%;
+  width: 59%;
   margin: 0 20px;
 }
 
@@ -387,7 +405,7 @@ body {
 }
 
 .main-content {
-  width: 60%;
+  width: 62%;
   color: #fff;
 }
 
@@ -422,7 +440,7 @@ body {
 }
 
 .main-sale {
-  width: 17%;
+  width: 19%;
   padding: 55px 27px;
   background: #fff;
   border: solid 2px #faad3d;

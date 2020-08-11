@@ -39,7 +39,7 @@
     width: 100%;
   }
   .main-section {
-    margin-top: 0;
+    margin-top: 51px;
   }
   .main-menu li {
     display: none;
@@ -204,13 +204,13 @@
   .complex-section {
     margin: 30px 0 100px;
   }
-  .search-panel-mb {
+  .header .search-panel-mb {
     display: block;
     background-color: #ffffff;
     border-bottom: solid 1px #e5e5e5;
     padding: 5px 7px;
   }
-  .search-panel-mb .wrapper {
+  .header .search-panel-mb .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -222,18 +222,18 @@
             justify-content: space-between;
     width: 100%;
   }
-  .search-panel-mb .wrapper .logo {
-    width: 150px;
+  .header .search-panel-mb .wrapper .logo {
+    width: 130px;
   }
-  .search-panel-mb .wrapper .logo img {
+  .header .search-panel-mb .wrapper .logo img {
     width: 100%;
   }
-  .search-panel-mb .wrapper .phone img, .search-panel-mb .wrapper .search-icon img, .search-panel-mb .wrapper .phone img, .search-panel-mb .wrapper .basket img {
-    height: 35px;
+  .header .search-panel-mb .wrapper .phone img, .header .search-panel-mb .wrapper .search-icon img, .header .search-panel-mb .wrapper .phone img, .header .search-panel-mb .wrapper .basket img {
+    height: 25px;
   }
-  .search-panel-mb .wrapper nav {
-    height: 50px;
-    width: 50px;
+  .header .search-panel-mb .wrapper nav {
+    height: 40px;
+    width: 40px;
     background-color: #fda11c;
     border-radius: 50%;
   }
@@ -288,7 +288,7 @@
     display: block;
     width: 40%;
     height: 2px;
-    margin-bottom: 4px;
+    margin-bottom: 3px;
     position: relative;
     background: #ffffff;
     border-radius: 3px;
@@ -310,8 +310,8 @@
   }
   #menuToggle input:checked ~ span {
     opacity: 1;
-    -webkit-transform: rotate(45deg) translate(-2px, 1px);
-            transform: rotate(45deg) translate(-2px, 1px);
+    -webkit-transform: rotate(45deg) translate(-2px, 2px);
+            transform: rotate(45deg) translate(-2px, 2px);
     background: #232323;
   }
   #menuToggle input:checked ~ span:nth-last-child(3) {
@@ -320,8 +320,8 @@
             transform: rotate(0deg) scale(0.2, 0.2);
   }
   #menuToggle input:checked ~ span:nth-last-child(2) {
-    -webkit-transform: rotate(-45deg) translate(0, -2px);
-            transform: rotate(-45deg) translate(0, -2px);
+    -webkit-transform: rotate(-45deg) translate(0, -3px);
+            transform: rotate(-45deg) translate(0, -3px);
   }
   #menu {
     position: absolute;

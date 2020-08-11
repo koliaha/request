@@ -27,7 +27,7 @@
         width: 100%;
     }
     .main-section{
-        margin-top: 0;
+        margin-top: 51px;
     }
     .main-menu li {
         display: none;
@@ -190,7 +190,7 @@
         margin: 30px 0 100px;
     }
 
-    .search-panel-mb {
+    .header .search-panel-mb {
         display: block;
         background-color:#ffffff;
         border-bottom: solid 1px #e5e5e5;
@@ -201,19 +201,19 @@
             justify-content: space-between;
             width: 100%;
             .logo{
-                width: 150px;
+                width: 130px;
                 img{
                     width:100%;
                 }
             }
             .phone, .search-icon,.phone,.basket  {
                 img{
-                    height: 35px;
+                    height: 25px;
                 }
             }
             nav{
-                height: 50px;
-                width: 50px;
+                height: 40px;
+                width: 40px;
                 background-color: #fda11c;
                 border-radius:50%;
             }
@@ -255,7 +255,7 @@
         display: block;
         width: 40%;
         height: 2px;
-        margin-bottom: 4px;
+        margin-bottom: 3px;
         position: relative;
         background: #ffffff;
         border-radius: 3px;
@@ -272,7 +272,7 @@
     }
     #menuToggle input:checked ~ span {
         opacity: 1;
-        transform: rotate(45deg) translate(-2px, 1px);
+        transform: rotate(45deg) translate(-2px, 2px);
         background: #232323;
     }
     #menuToggle input:checked ~ span:nth-last-child(3) {
@@ -280,7 +280,7 @@
         transform: rotate(0deg) scale(0.2, 0.2);
     }
     #menuToggle input:checked ~ span:nth-last-child(2) {
-        transform: rotate(-45deg) translate(0, -2px);
+        transform: rotate(-45deg) translate(0, -3px);
     }
     #menu {
         position: absolute;
@@ -305,6 +305,8 @@
     #menuToggle input:checked ~ ul {
         transform: none;
     }
+}
+@media screen and (max-width: 415px) {
 }
 @media screen and (max-width: 380px) {
     .recomend-left .recomend-item{
