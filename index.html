@@ -51,6 +51,22 @@
                     <div class="all-categories">
                         <div class="category">Все</div>
                     </div>
+                    <div class="dropdown-category" id="display-drop">
+                        <div class="text">Выберете категорию:</div>
+                        <ul>
+                            <li><a href="">Тепловое</a></li>
+                            <li><a href="">Холодильное</a></li>
+                            <li><a href="">Электромеханическое</a></li>
+                            <li><a href="">Посудомоечное</a></li>
+                            <li><a href="">Барное</a></li>
+                            <li><a href="">Хлебопекарное </a></li>
+                            <li><a href="">Линии раздачи</a></li>
+                            <li><a href="">Нейтральное</a></li>
+                            <li><a href="">Для фаст фуда</a></li>
+                            <li><a href="">Для залов </a></li>
+                            <li><a href="">Весовое</a></li>
+                        </ul>
+                    </div>
                     <div class="search-panel__input">
                         <input type="text">
                     </div>
@@ -58,6 +74,7 @@
                         <button type="submit"></button>
                     </div>
                 </form>
+                
                 <div class="portal">
                     <div class="portal-img"><img src="./img/suppliers.png" alt="suppliers"></div>
                     <div class="portal-text">
@@ -548,33 +565,7 @@
             </div>
         </div>
     </footer>
-    <script>
-        var mySwiper = new Swiper('.swiper-container', {
-            loop: true,
-            pagination: {
-                el: '.swiper-pagination',
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            scrollbar: {
-                el: '.swiper-scrollbar',
-            },
-        })
-    </script>
-    <script>
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-          if (prevScrollpos > currentScrollPos) {
-            document.getElementById("navbar").style.top = "113px";
-          } else {
-            document.getElementById("navbar").style.top = "-150px";
-          }
-          prevScrollpos = currentScrollPos;
-        }
-        </script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

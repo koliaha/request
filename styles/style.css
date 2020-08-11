@@ -127,6 +127,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
+  position: relative;
 }
 
 .header .search-panel .search-logo {
@@ -166,6 +167,7 @@ body {
   background: #f1f1f1;
   color: #777777;
   height: 35px;
+  cursor: pointer;
   line-height: 35px;
   position: relative;
 }
@@ -332,6 +334,21 @@ body {
 
 .header .menu-bottom .product-item a span {
   font-size: 14px;
+}
+
+.dropdown-category {
+  position: absolute;
+  z-index: 1000;
+  padding: 20px 35px 40px 17px;
+  background: #f1f1f1;
+  font-weight: 300;
+  font-size: 16px;
+  top: 50px;
+  display: none;
+}
+
+.dropdown-category .text {
+  margin-bottom: 35px;
 }
 
 /*main-section*/
