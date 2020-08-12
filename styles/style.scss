@@ -26,6 +26,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     background: #f3f2f2;
+    position: relative;
 }
 
 .wrapper {
@@ -34,10 +35,20 @@ body {
     margin: 0 auto;
     padding: 0;
 }
+
 .wrapper2 {
     max-width: 1400px;
     width: 100%;
     margin: 0 auto;
+}
+.shadow{
+position: absolute;
+display: none;
+z-index: 3;
+top: -50px;
+width: 100%;
+height: 100vh;
+background: rgba(0, 0, 0, 0.5);
 }
 .header {
     position: fixed;
@@ -125,6 +136,7 @@ body {
             .all-categories {
                 height: 100%;
                 .category {
+                    display: block;
                     border-right: 1px solid #e7e6e6;
                     padding: 0 25px 0 17px;
                     font-size: 16px;
@@ -135,6 +147,7 @@ body {
                     cursor: pointer;
                     line-height: 35px;
                     position: relative;
+                    white-space: nowrap;
                     &::after {
                         content: "";
                         position: absolute;
@@ -321,6 +334,7 @@ body {
     padding-left: 10px;
     width: 120px;
     cursor: pointer;
+    user-select: none;
 }
 .call {
     position: relative;
@@ -336,6 +350,18 @@ body {
         &:hover {
             color: $orange;
         }
+    }
+    .shadow-blur-modal{
+        display: none;
+        position: absolute;
+        width: 100%;
+        background: #5db975;
+        height: 48px;
+    }
+    .shadow-blur{
+        height: 100%;
+        display: flex;
+        align-items: center;
     }
 }
 .callback-modal {

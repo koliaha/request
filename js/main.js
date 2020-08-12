@@ -23,6 +23,8 @@ window.onscroll = () => {
     document.querySelector("#display-drop").style.display = "none"
     document.querySelector(".copy").style.display = "none"
     document.querySelector(".callback-modal").style.display = "none"
+    document.querySelector('.shadow').style.display = "none"
+    document.querySelector('.shadow-blur-modal').style.display = "none"
 }
 
 
@@ -35,16 +37,22 @@ function display(x){
 }
 document.querySelector('.category').addEventListener('click', (e) => {
     display(document.querySelector("#display-drop"))
+    display(document.querySelector('.shadow'))
 })
 document.querySelector('.mail-copy').addEventListener('click', (e) => {
     display(document.querySelector(".copy"))
+    display(document.querySelector('.shadow'))
 })
 
 document.querySelector('.call').addEventListener('mouseover', (e) => {
     document.querySelector(".callback-modal").style.display = "block"
+    document.querySelector('.shadow-blur-modal').style.display = "block"
+    document.querySelector('.shadow').style.display = "block"
 })
 document.querySelector('.close').addEventListener('click', (e) => {
     document.querySelector(".callback-modal").style.display = "none"
+    document.querySelector('.shadow-blur-modal').style.display = "none"
+    document.querySelector('.shadow').style.display = "none"
 })
 
 document.querySelector('.plus').addEventListener('click', (e) => {
@@ -63,7 +71,7 @@ document.querySelector('.plus').addEventListener('click', (e) => {
 document.querySelector('.copy').addEventListener('click', (e) => {
     console.log('copy')
      document.querySelector(".copymail-field").select();
-  document.execCommand("copy");
+     document.execCommand("copy");
 })
 
 document.querySelectorAll('#display-drop ul li a').forEach((el)=>{
