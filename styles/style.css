@@ -103,6 +103,12 @@ body {
 
 .header .menu-top .navigate ul li a {
   color: #e9f5ec;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.header .menu-top .navigate ul li a:hover {
+  color: #faad3d;
 }
 
 .header .search-panel-mb {
@@ -237,7 +243,6 @@ body {
 }
 
 .header .search-panel .search-basket {
-  min-width: 125px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -317,6 +322,17 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.header .menu-bottom .product-item .product-item_img img {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.header .menu-bottom .product-item:hover span {
+  color: #34a853;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
 }
 
 .header .menu-bottom .product-item a {
@@ -416,6 +432,13 @@ body {
   color: #faad3d;
   padding: 20px 0;
   text-align: center;
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+}
+
+.main-menu .title:hover {
+  background-color: #faad3d;
+  color: white;
 }
 
 .main-menu li {
@@ -430,6 +453,8 @@ body {
   padding-left: 30px;
   color: #000;
   font-weight: 100;
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
 }
 
 .main-menu a::after {
@@ -437,6 +462,11 @@ body {
   color: #cecece;
   position: absolute;
   right: 15px;
+}
+
+.main-menu a:hover {
+  background-color: #faad3d;
+  color: white;
 }
 
 .main-central {
@@ -573,7 +603,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 70px;
+  height: 100px;
   padding: 15px 0;
   background: #fff;
 }
@@ -599,6 +629,15 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.sponsers-list li a img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.sponsers-list li a img:hover {
+  opacity: 0.5;
 }
 
 /*news*/
@@ -975,12 +1014,24 @@ body {
   font-size: 24px;
   font-weight: 300;
   padding-bottom: 35px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.information .info-item .info-item__header:hover {
+  color: #fff;
 }
 
 .information .info-item ul li {
   color: #fff;
   font-weight: 300;
   font-size: 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.information .info-item ul li:hover {
+  color: #34a853;
 }
 
 .information .empt {
