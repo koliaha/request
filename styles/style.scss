@@ -16,6 +16,9 @@ a {
         color: inherit;
     }
 }
+input:focus {
+    outline: none;
+}
 body {
     line-height: 1.5;
     color: #212529;
@@ -120,6 +123,7 @@ body {
             display: flex;
             align-items: center;
             .all-categories {
+                height: 100%;
                 .category {
                     border-right: 1px solid #e7e6e6;
                     padding: 0 25px 0 17px;
@@ -150,6 +154,7 @@ body {
                     line-height: 35px;
                     width: 100%;
                     outline: none;
+                    padding: 0 20px;
                 }
             }
             .search-panel__btn {
@@ -271,6 +276,9 @@ body {
     .text {
         margin-bottom: 35px;
     }
+    li:hover {
+        color: #34a853;
+    }
 }
 .mail-copy {
     position: relative;
@@ -282,6 +290,10 @@ body {
     }
     span {
         color: white;
+        transition: 0.4s;
+        &:hover {
+            color: $orange;
+        }
     }
     .copy {
         position: absolute;
@@ -302,7 +314,136 @@ body {
         }
     }
 }
+.copymail-field{
+    background:none;
+    border:none;
+    color: white;
+    padding-left: 10px;
+    width: 120px;
+    cursor: pointer;
+}
+.call {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    img {
+        margin-right: 5px;
+    }
+    span {
+        color: white;
+        transition: 0.4s;
+        &:hover {
+            color: $orange;
+        }
+    }
+}
+.callback-modal {
+    display: none;
+}
+.callback {
+    position: absolute;
+    display: flex;
+    background-color: #fff;
+    padding: 50px 50px;
+    width: 750px;
+    right: 0;
+    top: 34px;
+    .callback-left {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin-right: 50px;
+        .num {
+            color: #42b76d;
+            font-size: 24px;
+            font-weight: 200;
+            margin-bottom: 10px;
+        }
+        .text,
+        .contact {
+            color: #a2a2a2;
+            font-size: 12px;
+            font-weight: 100;
+            margin-bottom: 15px;
+        }
+        .contact {
+            color: #000;
+        }
+        .contact-list {
+            display: flex;
+            flex-direction: column;
+            a {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+                span {
+                    color: #000;
+                    transition: 0.5s;
+                    &:hover {
+                        border-bottom: 1px solid #000;
+                    }
+                }
 
+                img {
+                    width: 26px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    .callback-right {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        .title {
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .text {
+            font-size: 15px;
+            line-height: 15px;
+            margin-bottom: 17px;
+        }
+        form {
+            label {
+                display: block;
+            }
+            input {
+                border: none;
+                border-bottom: 1px solid #dcdcdc;
+                padding: 5px 15px;
+                height: 35px;
+                line-height: 15px;
+                display: block;
+                margin-bottom: 20px;
+                transition: 0.4s;
+                &:hover,
+                &:focus {
+                    border-bottom: 1px solid $orange;
+                }
+            }
+            .button {
+                background-color: $orange;
+                color: #fff;
+                font-weight: bold;
+            }
+        }
+    }
+    .close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        user-select: none;
+        color: #a2a2a2;
+        font-size: 24px;
+        transition: 0.4s;
+        &:hover {
+            color: $orange;
+        }
+    }
+}
 /*main-section*/
 .main-section {
     margin-top: 250px;
@@ -692,6 +833,7 @@ body {
         font-weight: 300;
     }
 }
+
 .plus {
     width: 45px;
     height: 45px;
@@ -702,6 +844,12 @@ body {
     font-weight: 200;
     line-height: 45px;
     background-color: #232323;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+        background-color: $orange;
+        color: #000;
+    }
 }
 .complex-right {
     width: 35%;
@@ -744,7 +892,70 @@ body {
         font-size: 16px;
     }
 }
-
+.complex-more{
+    display: none;
+    margin: 20px 0;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    .complex-left__title {
+        text-align: center;
+        font-size: 30px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 500px;
+        background-color:#fff;
+        padding: 20px;
+        border-radius: 25px;
+        input,textarea {
+            height: 50px;
+            margin-bottom: 10px;
+            padding: 9px 25px 7px;
+            border-radius: 25px;
+            background-color: #eee;
+            border: 1px solid #eee;
+            line-height: 1.2;
+            width: 100%;
+            outline: none;
+            font-size: 18px;
+        }
+        textarea{
+            height: 200px;
+            resize: vertical; 
+        }
+        
+    }
+}
+.map-contact{
+    display: flex;
+    align-items:center;
+    margin-bottom: 100px;
+    .contacts{
+        width: 50%;
+        .map-title{
+            font-size: 30px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 20px;
+            margin-bottom: 10px;
+            font-weight: 100;
+        }
+    }
+    .map{
+        width: 500px;
+        height: 500px;
+        border: 2px solid $orange;
+        border-radius: 100%;
+        overflow: hidden; 
+    }
+}
 /*info sec*/
 .information {
     background: #282828;
@@ -760,7 +971,7 @@ body {
             font-weight: 300;
             padding-bottom: 35px;
             transition: 0.5s;
-            &:hover{
+            &:hover {
                 color: #fff;
             }
         }
@@ -769,7 +980,7 @@ body {
             font-weight: 300;
             font-size: 15px;
             transition: 0.3s;
-            &:hover{
+            &:hover {
                 color: #34a853;
             }
         }
