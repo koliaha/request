@@ -292,6 +292,15 @@
     -webkit-transform: none;
             transform: none;
   }
+  .map-contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .map-contact .map {
+    margin: 20px 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -340,7 +349,11 @@
   .main-menu li {
     display: none;
   }
-  .main-menu li:last-of-type {
+  .main-menu li a:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  .main-menu .all-products {
     display: block;
   }
   .main-central {
@@ -515,6 +528,16 @@
   }
   .recomend-item__content .text {
     width: 60%;
+  }
+  .map-contact .contacts {
+    width: 95%;
+  }
+  .map-contact .map {
+    width: 300px;
+    height: 300px;
+  }
+  .contact-form form {
+    width: 100%;
   }
 }
 

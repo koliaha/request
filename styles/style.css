@@ -340,7 +340,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 107px;
+  height: 100px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -646,8 +646,8 @@ body {
 
 /*main-section*/
 .main-section {
-  margin-top: 250px;
-  margin-bottom: 30px;
+  margin-top: 233px;
+  margin-bottom: 20px;
 }
 
 .main-section__blocks {
@@ -879,7 +879,7 @@ body {
 
 /*news*/
 .news-section {
-  margin: 140px 0;
+  margin: 164px 0 160px;
 }
 
 .news-title {
@@ -913,7 +913,7 @@ body {
 }
 
 .news-left-img {
-  margin-bottom: 30px;
+  margin-bottom: 21px;
 }
 
 .news__content {
@@ -965,7 +965,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 45px;
+  margin-bottom: 39px;
 }
 
 .news-right__item .news-item__img {
@@ -974,7 +974,7 @@ body {
 
 /*recomend*/
 .recomend-title {
-  margin-bottom: 20px;
+  margin-bottom: 6px;
   font-size: 36px;
   text-align: center;
 }
@@ -1092,7 +1092,7 @@ body {
 .recomend-item.right.top {
   background: #282828;
   color: #fff;
-  height: 60%;
+  height: 57%;
   margin-bottom: 10px;
 }
 
@@ -1108,7 +1108,7 @@ body {
 }
 
 .recomend-item.right.bottom {
-  height: 40%;
+  height: 44%;
   min-height: 280px;
 }
 
@@ -1132,7 +1132,7 @@ body {
 
 /*complex*/
 .complex-section {
-  margin: 30px 0 160px;
+  margin: 145px 0 172px;
 }
 
 .complex-block {
@@ -1149,6 +1149,7 @@ body {
 
 .complex-block p {
   font-weight: 300;
+  line-height: 22px;
 }
 
 .complex-left {
@@ -1157,13 +1158,13 @@ body {
 }
 
 .complex-left__title {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 36px;
 }
 
 .complex-left_second {
-  margin: 45px 0;
+  margin: 21px 0 43px;
 }
 
 .complex-left_second .complex-left__title {
@@ -1171,8 +1172,8 @@ body {
 }
 
 .plus {
-  width: 45px;
-  height: 45px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   color: #fff;
   text-align: center;
@@ -1334,7 +1335,7 @@ body {
 /*info sec*/
 .information {
   background: #282828;
-  padding: 90px 0 80px 0;
+  padding: 83px 0 50px 0;
 }
 
 .information .info-list {
@@ -1350,7 +1351,7 @@ body {
   color: #6c6c6c;
   font-size: 24px;
   font-weight: 300;
-  padding-bottom: 35px;
+  padding-bottom: 22px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -1363,6 +1364,7 @@ body {
   color: #fff;
   font-weight: 300;
   font-size: 15px;
+  line-height: 24px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }

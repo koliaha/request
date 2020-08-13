@@ -243,6 +243,12 @@
     #menuToggle input:checked ~ ul {
         transform: none;
     }
+    .map-contact{
+        flex-direction: column-reverse;
+        .map{
+            margin: 20px 0;
+        }
+    }
 }
 @media screen and (max-width: 768px) {
     .header .menu-top {
@@ -277,11 +283,17 @@
     }
     .main-menu li {
         display: none;
+        a{
+            &:hover {
+                background-color: #fff;
+                color: #000;
+            }
+        }
     }
-    .main-menu li:last-of-type {
+    
+    .main-menu .all-products{
         display: block;
     }
-
     .main-central {
         width: 100%;
         margin: 0;
@@ -439,7 +451,7 @@
     .complex-section {
         margin: 30px 0 100px;
     }
-
+    
     
 }
 @media screen and (max-width: 415px) {
@@ -452,6 +464,18 @@
     }
     .recomend-item__content .text {
         width: 60%;
+    }
+    .map-contact .contacts{
+        width: 95%;
+    }
+    .map-contact{
+        .map{
+            width: 300px;
+            height: 300px;
+        }
+    }
+    .contact-form form{
+        width: 100%;
     }
 }
 @media screen and (max-width: 380px) {

@@ -54,7 +54,14 @@ document.querySelector('.close').addEventListener('click', (e) => {
     document.querySelector('.shadow-blur-modal').style.display = "none"
     document.querySelector('.shadow').style.display = "none"
 })
-
+document.querySelector('.all-products').addEventListener('click', (e) => {
+    e.preventDefault()
+    document.querySelectorAll(".main-menu li").forEach((i, idx, array)=>{
+        if (idx !== array.length - 1){ 
+            display(i) 
+        }
+    })
+})
 document.querySelector('.plus').addEventListener('click', (e) => {
     let x = document.querySelectorAll('.complex-more')
     x.forEach((el) => {
