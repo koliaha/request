@@ -29,7 +29,7 @@
 }
 @media screen and (max-width: 1200px) {
     .main-sale {
-        padding: 55px 14px;
+        padding: 14px 14px;
     }
     .main-central-wrap {
         padding: 0 20px;
@@ -83,7 +83,7 @@
     }
     .sponsers-list li{
         width: 30%;
-        height: 100px;
+        height: 87px;
     border-bottom: 1px solid #f2f2f2;
     border-right: none;
     }
@@ -280,6 +280,7 @@
     }
     .main-section {
         margin-top: 51px;
+        margin-bottom: 15px;
     }
     .main-menu li {
         display: none;
@@ -305,10 +306,10 @@
     }
     .main-sale {
         width: 95%;
-        margin: 10px auto 0;
+        margin: 16px auto 0;
     }
     .main-central-wrap {
-        padding: 60px 20px;
+        padding: 14px 20px;
     }
     .main-content .title {
         font-size: 19px;
@@ -336,20 +337,24 @@
     }
     .sponsers-list li {
         width: 50%;
-        height: 100px;
         border-bottom: 1px solid #f2f2f2;
     }
     .sponsers-list {
         padding: 0;
     }
     .sponsers-section {
-        margin-bottom: 100px;
+        margin-bottom: 68px;
+    }
+    .recomend-title{
+        font-size: 22px;
     }
     .recomend-subtitle {
         width: 85%;
+        line-height: 19px;
     }
     .recomend-list {
         flex-direction: column;
+        margin: 35px 0;
     }
     .recomend-left {
         width: 100%;
@@ -449,7 +454,7 @@
         margin-bottom: 30px;
     }
     .complex-section {
-        margin: 30px 0 100px;
+        margin: 78px 0 100px;
     }
     
     
@@ -460,10 +465,54 @@
     }
     .recomend-item.right.top .recomend-item__content {
         margin-left: 145px;
-        padding: 50px 0;
+        padding: 36px 0;
     }
     .recomend-item__content .text {
         width: 60%;
+    }
+    .complex-right .logo {
+        width: 128px;
+        margin-left: 14px;
+        margin-bottom: 23px;
+    }
+    
+    .complex-right .logo-name {
+        font-size: 28px;
+        line-height: 20px;
+        span{
+            margin: 0;
+        }
+    }
+    .complex-right .company {
+        font-size: 19px;
+        margin-top: 29px;
+        line-height: 16px;
+        margin-bottom: 18px;
+    }
+    .complex-right .info-text {
+        font-size: 15px;
+    }
+    .complex-block p {
+        line-height: 19px;
+        font-size: 16px;
+    }
+    .complex-left_first {
+        margin-bottom: 56px;
+    }
+    .plus {
+        width: 52px;
+        height: 52px;
+        margin-left: 5px;
+        line-height: 52px;
+    }
+    .complex-section {
+        margin: 78px 0 78px;
+    }
+    .complex-left__title {
+        font-size: 24px;
+        line-height: 32px;
+        margin-top: 5px;
+        margin-bottom: 24px;
     }
     .map-contact .contacts{
         width: 95%;
@@ -477,13 +526,31 @@
     .contact-form form{
         width: 100%;
     }
+    .information {
+        padding: 24px 20px;
+    }
+    .information .info-item .info-item__header {
+        font-size: 15px;
+    }
+    .foot-right__text{
+        text-align: center;
+    }
 }
 @media screen and (max-width: 380px) {
     .recomend-left .recomend-item {
-        padding: 25px 25px;
+        padding: 5px 25px;
+    }
+    .recomend-item__content .text{
+        font-size: 12px;
+    }
+    .recomend-item__content{
+        margin-bottom: 30px;
     }
     .recomend-item__content .title {
         font-size: 20px;
+    }
+    .recomend-item.right.bottom {
+        min-height: 242px;
     }
     .recomend-item.right.top .recomend-item__content {
         margin-left: 133px;
